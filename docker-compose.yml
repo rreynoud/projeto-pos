@@ -1,0 +1,14 @@
+version: '3'
+services:
+  development:
+    image: fabiosammy/rails:4.2.11.1
+    command: /usr/bin/sudo /usr/sbin/sshd -D
+    ports:
+      - "2235:22"
+      - "1025:1025"
+      - "1080:1080"
+      - "3000:3000"
+      - "8080:8080"
+      - "9292:9292"
+    volumes:
+      - .:/var/www/app
