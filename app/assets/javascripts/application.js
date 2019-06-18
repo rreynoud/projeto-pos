@@ -73,15 +73,15 @@ function add_new_product_to_list_test()
     var x=document.getElementById('sampleTable').insertRow(rowCount);
     var productId = x.insertCell(0);
     var productCell = x.insertCell(1);
-    var quantity = x.insertCell(2);
-    var quantityCell = x.insertCell(3);
+    var quantityCell = x.insertCell(2);
+    var priceCell = x.insertCell(3);
     var totalValueCell = x.insertCell(4);
 
     productId.innerHTML=innerProductId;
     productCell.innerHTML=product_name;
-    quantity.innerHTML= quantityInput ;
-    quantityCell.innerHTML= innerProductId ;
-    totalValueCell.innerHTML= quantityInput ;
+    quantityCell.innerHTML= quantityInput ;
+    priceCell.innerHTML= price ;
+    totalValueCell.innerHTML = quantity * price  ;
 
     $(".numeric").val("0");
 }
