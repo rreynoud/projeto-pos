@@ -33,15 +33,9 @@ function add_new_product_to_list_test()
 {
 
     var rowCount = $("#sampleTable > tbody").children().length;
-    // rowCount++
-
-    console.log(rowCount)
-    console.log(rowCount)
-
     var product_id = $('.select.optional option:selected').val();
     var product_name = $('.select.optional option:selected').text();
     var quantity = $('.numeric').val();
-    console.log(quantity)
 
     var position = rowCount
     --position
@@ -50,13 +44,11 @@ function add_new_product_to_list_test()
 
     var nameProductId = "list[items_attributes]["+ position +"][product_id]"
 
-
     var innerProductId = "<input type=\"text\"   name=\"" +  nameProductId + "\" " +
         "id=\"" + "product_"+ product_id + "\" value=\"" + product_id  + "\">"
 
     var quantityInput = "<input type=\"text\" name=\"" +  nameQuantity + "\" " +
         "id=\"" + "quantity_"+ product_id + "\" value=\"" + quantity  + "\">"
-
 
     var x=document.getElementById('sampleTable').insertRow(rowCount);
     var productId = x.insertCell(0);
