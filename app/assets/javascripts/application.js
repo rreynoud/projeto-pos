@@ -34,20 +34,21 @@ function add_new_product_to_list_test()
 
     var product_id = $('.select.optional option:selected').val();
     var product_name = $('.select.optional option:selected').text();
-    var quant = $('.numeric .integer .optional').text();
+    var quantity = $('.numeric').val();
 
-    console.log(quant)
 
-    var inner = "<input type=\"text\" id=\"" + "product_"+ product_id + "\" value=\"" + product_id  + "\">"
-    var quantityInput = "<input type=\"text\" id=\"" + "quantity_"+ product_id + "\" value=\"" + product_id  + "\">"
+    var innerProductId = "<input type=\"text\" id=\"" + "product_"+ product_id + "\" value=\"" + product_id  + "\">"
+    var quantityInput = "<input type=\"text\" id=\"" + "quantity_"+ product_id + "\" value=\"" + quantity  + "\">"
 
     var x=document.getElementById('sampleTable').insertRow(0);
-    var y = x.insertCell(0);
-    var z = x.insertCell(1);
+    var productCell = x.insertCell(0);
+    var quantityId = x.insertCell(1);
     var quantityCell = x.insertCell(2);
-    y.innerHTML=product_name;
-    z.innerHTML= inner ;
+    var totalValueCell = x.insertCell(3);
+    productCell.innerHTML=product_name;
+    quantityId.innerHTML= innerProductId ;
     quantityCell.innerHTML= quantityInput ;
+    totalValueCell.innerHTML= quantityInput ;
 }
 
 $(document).ready(function() {
