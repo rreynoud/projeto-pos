@@ -18,6 +18,8 @@
 //= require_tree .
 
 
+var price = 0.0
+
 function add_new_product_to_list()
 {
     let div = $(this).parent(true);
@@ -37,7 +39,8 @@ function searchPrice(){
     console.log("Buscando preço do item");
     $.get('/products/1.json', function(data){
         console.log("fizemos a busca")
-        console.log(data)
+        console.log(data.price)
+        price = data.price
     });
 
 }
@@ -45,6 +48,9 @@ function searchPrice(){
 
 function add_new_product_to_list_test()
 {
+
+    console.log("Preço do produto")
+    console.log(price)
 
     var rowCount = $("#sampleTable > tbody").children().length;
     var product_id = $('.select.optional option:selected').val();
