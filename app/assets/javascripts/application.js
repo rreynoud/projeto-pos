@@ -36,13 +36,11 @@ $(document).ready(function() {
 });
 
 function searchPrice(){
-    console.log("Buscando preço do item");
-    $.get('/products/1.json', function(data){
-        console.log("fizemos a busca")
-        console.log(data.price)
+    var product_id = $('.select.optional option:selected').val();
+    $.get('/products/'+ product_id +'.json', function(data){
         price = data.price
+        $('#price').attr('value', price)
     });
-
 }
 
 
