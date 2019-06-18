@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a29dd8fd-e7c5-4720-9eb0-77f40687bff3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/lists_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/lists_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/lists/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/lists/_form.html.erb" afterDir="false" />
     </list>
@@ -25,8 +24,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/lists/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="22" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+            <state relative-caret-position="246">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
@@ -40,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/lists_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+            <state relative-caret-position="306">
+              <caret line="63" column="55" selection-start-line="63" selection-start-column="55" selection-end-line="63" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -67,7 +66,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="169">
@@ -78,7 +77,11 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/migrate/20190618003604_create_lists.rb">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="26" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="26" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -127,9 +130,9 @@
       <list>
         <option value="$PROJECT_DIR$/app/views/products/show.json.jbuilder" />
         <option value="$PROJECT_DIR$/app/views/products/_product.json.jbuilder" />
-        <option value="$PROJECT_DIR$/app/controllers/lists_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/lists/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+        <option value="$PROJECT_DIR$/app/views/lists/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/lists_controller.rb" />
       </list>
     </option>
   </component>
@@ -345,12 +348,12 @@
       <option name="presentableId" value="Default" />
       <updated>1560862156956</updated>
       <workItem from="1560862158259" duration="7628000" />
-      <workItem from="1560882561296" duration="1603000" />
+      <workItem from="1560882561296" duration="1957000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9231000" />
+    <option name="totallyTimeSpent" value="9585000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1280" height="920" extended-state="6" />
@@ -422,9 +425,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20190618003604_create_lists.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20190616212504_create_products.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -432,10 +432,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/lists_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+        <state relative-caret-position="169">
+          <caret line="75" selection-start-line="73" selection-end-line="75" />
         </state>
       </provider>
     </entry>
@@ -448,15 +448,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/lists/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="22" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+        <state relative-caret-position="246">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20190618003604_create_lists.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="75" selection-start-line="73" selection-end-line="75" />
+        <state relative-caret-position="60">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/lists_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="63" column="55" selection-start-line="63" selection-start-column="55" selection-end-line="63" selection-end-column="55" />
         </state>
       </provider>
     </entry>

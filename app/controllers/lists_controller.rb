@@ -61,7 +61,7 @@ class ListsController < ApplicationController
     end
 
     def list_params
-      params.require(:list).permit(:total, items_attributes: [:id, :product_id, :quantity])
+      params.require(:list).permit(:total, :is_bought,  items_attributes: [:id, :product_id, :quantity])
       # params.require(:list).permit(:name, :birthday, phones_attributes: [:id, :number, :_destroy])
     end
 end
