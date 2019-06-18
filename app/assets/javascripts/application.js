@@ -26,7 +26,21 @@ function add_new_product_to_list()
 
 $(document).ready(function() {
     $('.form-inputs').on('click', '.add-new-product', add_new_product_to_list);
+
+    $( ".select .optional" ).change(function() {
+        searchPrice()
+    });
+
 });
+
+function searchPrice(){
+    console.log("Buscando preço do item");
+    $.get('/products/1.json', function(data){
+        console.log("fizemos a busca")
+        console.log(data)
+    });
+
+}
 
 
 function add_new_product_to_list_test()
