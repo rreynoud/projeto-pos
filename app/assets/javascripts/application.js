@@ -32,6 +32,12 @@ $(document).ready(function() {
 function add_new_product_to_list_test()
 {
 
+    var rowCount = $("#sampleTable > tbody").children().length;
+    // rowCount++
+
+    console.log(rowCount)
+    console.log(rowCount)
+
     var product_id = $('.select.optional option:selected').val();
     var product_name = $('.select.optional option:selected').text();
     var quantity = $('.numeric').val();
@@ -40,7 +46,7 @@ function add_new_product_to_list_test()
     var innerProductId = "<input type=\"text\" id=\"" + "product_"+ product_id + "\" value=\"" + product_id  + "\">"
     var quantityInput = "<input type=\"text\" id=\"" + "quantity_"+ product_id + "\" value=\"" + quantity  + "\">"
 
-    var x=document.getElementById('sampleTable').insertRow(0);
+    var x=document.getElementById('sampleTable').insertRow(rowCount);
     var productCell = x.insertCell(0);
     var quantityId = x.insertCell(1);
     var quantityCell = x.insertCell(2);
