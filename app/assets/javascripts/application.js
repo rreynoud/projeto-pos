@@ -55,6 +55,8 @@ function add_new_product_to_list_test()
     quantityId.innerHTML= innerProductId ;
     quantityCell.innerHTML= quantityInput ;
     totalValueCell.innerHTML= quantityInput ;
+
+    $(".numeric").val("0");
 }
 
 $(document).ready(function() {
