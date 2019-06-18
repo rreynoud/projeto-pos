@@ -16,3 +16,14 @@
 //= require bootstrap
 //= require turbolinks
 //= require_tree .
+
+
+function add_new_product_to_list()
+{
+    let div = $(this).parent(true);
+    $('.form-inputs').after(div.clone(true));
+}
+
+$(document).ready(function() {
+    $('.form-inputs').on('click', '.add-new-product', add_new_product_to_list);
+});

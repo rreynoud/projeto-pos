@@ -14,7 +14,8 @@ gem 'bootstrap', '~> 4.3.1'
 gem 'simple_form', '~> 3.5', '>= 3.5.1'
 
 group :development, :test do
-  gem 'byebug'
+  gem 'pry-rails'
+  gem 'pry-byebug'
 end
 
 group :development do

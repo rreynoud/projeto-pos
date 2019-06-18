@@ -1,0 +1,16 @@
+<%= simple_form_for(@list) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.simple_fields_for :items do |i| %>
+      <%= i.input :product_id, as: :select, collection: @products %>
+      <%= i.input :quantity %>
+    <% end %>
+
+    <%= link_to '+', 'javascript:void(0);', class: 'add-new-product' %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
