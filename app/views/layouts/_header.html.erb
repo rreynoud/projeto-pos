@@ -1,16 +1,17 @@
-<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-  <li class="nav-item">
-    <%= link_to 'Criar produto', new_product_path,  class: "nav-link active"  %>
-  </li>
-  <li class="nav-item">
-    <%= link_to 'Listar pedidos', lists_path,  class: "nav-link"  %>
-  </li>
-  <li class="nav-item">
-    <%= link_to 'Criar nova lista', new_list_path,  class: "nav-link"  %>
-  </li>
-</ul>
-<div class="tab-content" id="pills-tabContent">
-  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
-  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
-</div>
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+  <div class="collapse navbar-collapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <%= link_to(root_path, class: 'nav-link') do %>
+          Home <span class="sr-only">(current)</span>
+        <% end %>
+      </li>
+      <li class="nav-item">
+        <%= link_to 'Produtos', products_path, class: 'nav-link' %>
+      </li>
+      <li class="nav-item">
+        <%= link_to 'Lista', lists_path, class: 'nav-link' %>
+      </li>
+    </ul>
+  </div>
+</nav>

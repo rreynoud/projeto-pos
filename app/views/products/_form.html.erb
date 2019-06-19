@@ -1,13 +1,21 @@
+<div class="row">
+  <div class="col-md-12">
+    <%= simple_form_for(@product) do |f| %>
+      <%= f.error_notification %>
 
-<%= simple_form_for(@product) do |f| %>
-  <%= f.error_notification %>
+      <div class="form-group">
+        <label for="product_name">Nome *</label>
+        <%= f.input :name, class: 'form-control', label: false %>
+      </div>
 
-  <div class="form-inputs">
-    <%= f.input :name %>
-    <%= f.input :price %>
+      <div class="form-group">
+        <label for="product_price">Preço *</label>
+        <%= f.input :price, class: 'form-control', label: false %>
+      </div>
+
+      <div class="form-actions">
+        <%= f.button :submit, class: 'btn btn-primary' %>
+      </div>
+    <% end %>
   </div>
-
-  <div class="form-actions">
-    <%= f.button :submit %>
-  </div>
-<% end %>
+</div>

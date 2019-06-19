@@ -63,14 +63,10 @@ function add_new_product_to_list_test()
     var name_current_price = "list[items_attributes]["+ price +"][current_price]"
 
     var inner_product_id = "<input type=\"text\"   name=\"" +  name_product_id + "\" " +
-        "id=\"" + "product_"+ product_id + "\" value=\"" + product_id  + "\">"
+        "id=\"" + "product_"+ product_id + "\" readonly value=\"" + product_id  + "\">"
 
     var quantity_input = "<input type=\"text\" name=\"" +  name_quantity + "\" " +
-        "id=\"" + "quantity_"+ product_id + "\" value=\"" + quantity  + "\">"
-
-
-    // var currentPriceInput = "<input type=\"text\"   name=\"" +  name_current_price + "\" " +
-    //     "id=\"" + "product_"+ product_id + "\" value=\"" + product_id  + "\">"
+        "id=\"" + "quantity_"+ product_id + "\" readonly value=\"" + quantity  + "\">"
 
 
     var totalItem = quantity * price

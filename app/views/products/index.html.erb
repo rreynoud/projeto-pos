@@ -1,29 +1,38 @@
-<p id="notice"><%= notice %></p>
+<div class="row">
+  <div class="col-md-12">
+    <p id="notice"><%= notice %></p>
+  </div>
 
-<h1>Listing Products</h1>
+  <div class="col-md-12">
+    <h1>Listagem de Produtos</h1>
+  </div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Price</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+  <div class="col-md-12">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Nome</th>
+          <th scope="col">Preço</th>
+          <th colspan="3">Ações</th>
+        </tr>
+      </thead>
 
-  <tbody>
-    <% @products.each do |product| %>
-      <tr>
-        <td><%= product.name %></td>
-        <td><%= product.price %></td>
-        <td><%= link_to 'Show', product %></td>
-        <td><%= link_to 'Edit', edit_product_path(product) %></td>
-        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+      <tbody>
+        <% @products.each do |product| %>
+          <tr>
+            <td scope="row"><%= product.name %></td>
+            <td><%= product.price %></td>
+            <td rowspan="3">
+              <%= link_to 'Editar', edit_product_path(product), class: 'btn btn-info' %>
+              <%= link_to 'Excluir', product, method: :delete, data: { confirm: 'Tem certeza?' }, class: 'btn btn-danger' %>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
 
-<br>
-
-<%= link_to 'New Product', new_product_path %>
+  <div class="col-md-12">
+    <%= link_to 'Novo produto', new_product_path, class: 'btn btn-success' %>
+  </div>
+</div>

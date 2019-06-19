@@ -3,35 +3,49 @@
 
   <div class="form-inputs">
     <%= f.simple_fields_for :items do |i| %>
-      <%= i.input :product_id, as: :select, collection: @products %>
-      Preço:
-      <input type="text" id="price" value="0" name="price">
+      <div class="form-group">
+        <label class="select optional" for="list_items_attributes_0_product_id">Produto</label>
+        <%= i.input :product_id, as: :select, collection: @products, input_html: {class: 'form-control'}, label: false %>
+      </div>
 
-      <%= i.input :quantity %>
+      <div class="form-group">
+        <label for="price">Preço</label>
+        <input type="text" id="price" value="0" name="price" class='form-control' readonly>
+      </div>
+
+      <div class="form-group">
+        <label for="list_items_attributes_0_product_quantity">Quantidade</label>
+        <%= i.input :quantity, input_html: { class: 'form-control' }, label: false %>
+      </div>
     <% end %>
 
-    <%= link_to '+', 'javascript:void(0);', class: 'add-new-product-test' %>
+    <div class="form-group">
+      <%= link_to 'Adicionar produto na lista', 'javascript:void(0);', class: 'add-new-product-test btn btn-info' %>
+    </div>
   </div>
 
-  <table id="sampleTable" border="1">
+  <table id="sampleTable" class="table">
     <tr>
-      <td>Produto id</td>
-      <td>Nome produto</td>
+      <td>Código</td>
+      <td>Nome</td>
       <td>Quantidade</td>
-      <td>preço</td>
+      <td>Preço</td>
       <td>Total</td>
     </tr>
   </table>
-  <br>
 
-  <input type="checkbox" id="is_bought" name="list[is_bought]">
-  <label for="horns">Fechar pedido?</label>
+  <div class="form-group">
+    <label for="is_bought">Pedido comprado
+      <input type="checkbox" id="is_bought" name="list[is_bought]">
+    </label>
+  </div>
 
-  <br>
-  Total:<br>
-  <input type="text" id="list_total" value="0" name="list[total]">
+  <div class="form-group">
+    <label for="list_total">Total</label>
+    <input type="text" id="list_total" value="0" name="list[total]" class="form-control" readonly>
+  </div>
 
   <div class="form-actions">
-    <%= f.button :submit %>
+    <%= f.button :submit, class: 'btn btn-primary' %>
   </div>
 <% end %>
